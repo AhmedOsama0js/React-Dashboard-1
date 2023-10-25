@@ -1,0 +1,45 @@
+.span-between-icon{
+  height: 3px;
+  background-color: #e0e0e0;
+}
+.sidebar-head-icon{
+  color: #f1f1f1;
+  /* background-color: #7506b6 */
+}
+.sidebar-icon{
+  color: #423c3c;
+  background-color: #f0efef;
+  transition: 0.3s;
+  
+}
+.sidebar-icon:hover{
+  background-color: #dddddd
+}
+.sidebar-icon.active{
+  color: #e9e9e9;
+  background-color: #888888;
+}
+.main-img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-sidebar{
+  /* background-color: #7506b6; */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width:768px){
+  .img-sidebar{
+    width: 45px;
+    height: 45px;
+  }
+}
+.OrdersTable ul {
+  height: 65vh;
+  overflow-y: scroll;
+}

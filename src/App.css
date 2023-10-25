@@ -1,0 +1,56 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr repeat(11, 1fr);
+}
+.sidebar {
+  grid-column: 1 / span 1;
+  height: 100vh;
+  box-shadow: 2px 0px 18px 5px lightgrey;
+  z-index: 100;
+}
+.dashboard {
+  grid-column: 2 / span 11;
+  height: 100vh;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    grid-column: 1 / span 2;
+  }
+  .dashboard {
+    grid-column: 3 / span 10;
+
+  }
+}
+
+.ChartAndOrders {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+ gap: 10px;
+}
+
+.Chart, .OrdersTable {
+  height: 70vh;
+  box-shadow: 2px 0px 18px 5px lightgrey;
+  z-index: 100;
+}
+.Chart {
+  grid-column: span 2 /1;
+}
+.Chart .CONT-chart{
+  margin: 0 auto;
+  width: 97%;
+  height: 95%;
+}
+.OrdersTable {
+  overflow: hidden;
+  grid-column: span 4/5;
+}
+@media screen and (max-width: 978px) {
+  .OrdersTable {
+    grid-column: span 12;
+  }
+  .Chart {
+    grid-column: span 12;
+  }
+}

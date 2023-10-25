@@ -1,0 +1,13 @@
+.top-cord {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 987px) {
+  .top-cord {
+    grid-template-columns: 1fr;
+  }
+}
+.top-cord > div {
+  box-shadow: -2px 7px 16px 0px #cbcbcb;
+}

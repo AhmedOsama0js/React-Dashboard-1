@@ -1,0 +1,9 @@
+.table-clint{
+  height: 82vh;
+  overflow: scroll;
+  box-shadow: -2px 7px 16px 0px #cbcbcb;
+  /* min-width: 500px; */
+}
+.table-clint .table{
+ min-width: 600px;
+}
