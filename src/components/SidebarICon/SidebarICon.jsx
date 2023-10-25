@@ -15,12 +15,13 @@ const SidebarICon = () => {
   return (
     <div className="d-flex py-3 px-2 flex-column justify-content-between  h-100">
       <div className="d-flex flex-column align-items-center ">
-          <div
-            className={`sidebar-head-icon bg-success d-flex flex-fill fs-3 p-2 rounded-3 my-3 `}>
-            <MdOutlineSpaceDashboard />
-          </div>
+        <div
+          className={`sidebar-head-icon bg-success d-flex flex-fill fs-3 p-2 rounded-3 my-3 `}
+        >
+          <MdOutlineSpaceDashboard />
+        </div>
         <span className="span-between-icon rounded-5 d-flex flex-fill w-75"></span>
-        <Link to="/">
+        <Link to="React-Dashboard-1">
           <div
             className={`sidebar-icon d-flex flex-fill fs-3 p-2 rounded-3 my-3 ${
               activeItem === "home" ? "active" : ""

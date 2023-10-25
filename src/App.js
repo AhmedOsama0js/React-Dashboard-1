@@ -16,7 +16,7 @@ function App() {
         </div>
         <Routes>
           <Route
-            path="/"
+            path="React-Dashboard-1"
             element={
               <div className="dashboard bg-light">
                 <TopCard />
