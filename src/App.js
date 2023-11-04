@@ -14,36 +14,24 @@ function App() {
         <div className="sidebar bg-body">
           <SidebarICon />
         </div>
-        <Routes>
-          <Route
-            path="React-Dashboard-1"
-            element={
-              <div className="dashboard bg-light">
-                <TopCard />
-                <div className="ChartAndOrders p-3 justify-content-between">
-                  <BarChart />
-                  <RecentOrders />
-                </div>
-              </div>
-            }
-          />
-          <Route
-            path="clint"
-            element={
-              <div className="dashboard bg-light">
-                <ClintPage />
-              </div>
-            }
-          />
-          <Route
-            path="product"
-            element={
-              <div className="dashboard bg-light">
-                <ProductPage />
-              </div>
-            }
-          />
-        </Routes>
+        <div className="dashboard bg-light">
+          <Routes>
+            <Route
+              path="React-Dashboard-1"
+              element={
+                <>
+                  <TopCard />
+                  <div className="ChartAndOrders p-3 justify-content-between">
+                    <BarChart />
+                    <RecentOrders />
+                  </div>
+                </>
+              }
+            />
+            <Route path="clint" element={<ClintPage />} />
+            <Route path="product" element={<ProductPage />} />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );
